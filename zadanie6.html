@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict'
+                function calcDiv(g,h){
+                return g/h
+                }
+
+                function calcMult(e,f){
+                return e*f
+                }
+                
+                function mathOperation(){
+                let arg1=1
+                let arg2=2
+                let operation = prompt('Введите значение 1 чтобы получить разность двух чисел (81,72),значение 2 для умножения');
+                
+                switch (operation) {
+                 case "1":
+                alert("Разность чисел: "+ calcDiv ( 81, 72));
+                break;
+                 case "2":
+                alert("Произведение чисел: "+ calcMult(81, 72));
+                break;
+                default:
+                alert("Извините такого значения " + operation + " нет.");
+                }
+                }
+                mathOperation();
+                console.log("by Evgeniy");
+
+                        //function calcDiv(g,h){
+                        //return g/h
+                        //}
+                        //
+                        //function calcMult(e,f){
+                        //return e*f
+                        //}
+                        //
+                        //let expr = prompt('Введите значение 1 чтобы получить разность двух чисел (81,72),значение 2 для умножения');
+                        //switch (expr) {
+                        //case "1":
+                        //alert("Разность чисел: "+ calcDiv ( 81, 72));
+                    // break;
+                        //case "2":
+                    //  alert("Произведение чисел: "+ calcMult(81, 72));
+                    //   break;
+                    // default:
+                    //    alert("Извините такого значения " + expr + " нет.");
+                    // }
+                        //
+                        // console.log("by Evgeniy");
+
+
+    //function mathOperation(arg1, arg2, operation)
+     //{
+     //    return arg1 / arg2;
+     //}
+       // let operation = mathOperation(35, 7)
+        //alert(operation);
+
+
+                //function calcDiv(g,h){
+                //return g/h
+                //}
+                //let resultDiv = calcDiv(81, 72);
+                //alert('Результат деления: '+  resultDiv );
+    </script>
+</body>
+</html>
