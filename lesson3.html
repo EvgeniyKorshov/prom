@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    'use strict';
+    let primeNumber = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
+    let i = 0;
+    while (i < primeNumber.length) {
+    console.log(primeNumber[i++]);
+    }
+
+    let item1 = ["товар-1",150];
+    let item2 = ["товар-2",200];
+    let item3 = ["товар-3",351];
+    let item4 = ["товар-4",523];
+    
+    function countBasketPrice(a,b,c,d){
+        let sum = a + b + c + d
+        console.log('Товаров в корзине на сумму: '+ sum + " руб.");
+    }
+    countBasketPrice(item1[1], item2[1], item3[1], item4[1]);
+
+   
+    for ( var j = 0; j < 10; j++); //смысл понял что если стоит ; то тела нет,но почему выводится 10 вместо 9 и как вывести остальные не понимаю!
+	console.log(j); 
+    
+    //4 задание слишком сложное для меня
+      </script>
+</body>
+</html>
