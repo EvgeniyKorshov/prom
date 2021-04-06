@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+    //С параметрами функции не до конца понимаю,какие параметры я здесь должен поставить?
+    //anyString,userinfo - пишет параметры уже объявлены!
+    function numObj(){
+            let anyString = prompt("Введите число от 0 до 999");
+            let userinfo = { }
+            userinfo.number=anyString;
+            if(anyString<=999){
+            if(anyString>100) return  console.log("Сотни: " + anyString.charAt(0)+" Десятки: " + anyString.charAt(1)+" Единицы: " + anyString.charAt(2) + " Число: " + userinfo.number);
+            else if(anyString>10) return  console.log(" Десятки: " + anyString.charAt(0)+" Единицы: " + anyString.charAt(1) + " Число: " + userinfo.number);
+            else if (anyString<10) return console.log(" Единицы: " + anyString.charAt(0) + " Число: " + userinfo.number);
+            else console.log("Попробуйте еще раз");
+            }
+            else console.log("Введите число от 0 до 999 " + userinfo);
+            }
+    numObj();
+    
+    //Суть задания это замена массива на объект,если что не так жду в коментах...
+    let price = {
+        ["товар-1"]: 150,  
+        ["товар-2"]: 200,
+        ["товар-3"]: 351,
+        ["товар-4"]: 523,  
+        };
+    function countBasketPrice(a,b,c,d){
+        let sum = a + b + c + d;
+        console.log('Товаров в корзине на сумму: '+ sum + " руб.");
+        console.log(price);
+    }
+    countBasketPrice(price["товар-1"], price["товар-2"], price["товар-3"],price["товар-4"]);
+    </script>
+</body>
+</html>
