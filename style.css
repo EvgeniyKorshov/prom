@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+}
+
+.goods-list{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    
+}
+p{
+    text-align: center;
+    word-wrap: break-word; /* Перенос слов */
+}
+h3{
+    text-align: center;
+}
+.item{
+    padding: 5px;
+    outline: 1px solid#000;
+    min-height:200px ;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.good-button{
+    margin-left: auto;
+    background-color: #fff;
+    height: 25px;
+    width: 100px;
+    border-top-left-radius:25px;  /* для верхнего левого угла; */
+    border-top-right-radius:25px; /* для верхнего правого угла;*/
+    border-bottom-left-radius:25px; /* для нижнего левого угла;*/
+    border-bottom-right-radius:25px; /* для нижнего правого угла.*/
+}
+.cart-button{
+    background-color: #fff;
+    
+    height: 25px;
+    width: 100px;
+    border-top-left-radius:25px;  /* для верхнего левого угла; */
+    border-top-right-radius:25px; /* для верхнего правого угла;*/
+    border-bottom-left-radius:25px; /* для нижнего левого угла;*/
+    border-bottom-right-radius:25px; /* для нижнего правого угла.*/
+   
+}
+.cart{
+    padding: 10px;
+    margin: 10px;
+    outline: 1px solid #000;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-list{
+    padding: 10px;
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.goods-item{
+    
+    padding: 30px;
+    outline: 1px solid #000;
+}
