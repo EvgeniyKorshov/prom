@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+   <div id="app">
+            <header-vue  @toggle-cart="toggleCartStatus" @filter-goods="filterGoods"></header-vue>
+            <cart-vue @isVisibleCart="isVisibleCart"></cart-vue>
+            
+    
+    
+            <main> 
+                <h3>Каталог:</h3>
+                <div class="goods-list" >
+                <div v-for="item in filteredGoods" :key="item.id_pruduct" class="goods-item">
+                    <h3>{{item.product_name}}</h3>
+                    <p>{{item.price}}</p>
+                    <button class="good-button">Добавить</button>
+                </div>
+                </div>
+            </main>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
