@@ -23,7 +23,7 @@ Vue.component('header-vue', {
   <div class="nav">
       <input type="text" class="goods-search" v-model="searchValue"/>
       <button class="cart-button" type="button" @Click="onClick">Искать</button>
-      <button class="cart-button" type="button" @Click="$emit('toggle-cart')"  >Корзина</button>
+      <button class="cart-button" type="button" @click="$emit('toggle-cart')"  >Корзина</button>
   </div>
 </header>  
   `

@@ -10,8 +10,8 @@
 <body>
     
    <div id="app">
-            <header-vue :toggle-cart="toggleCartStatus"  @filter-goods="filterGoods"></header-vue>
-            <cart-vue  @cartGoods="cartGoods" @isVisibleCart="isVisibleCart"></cart-vue>
+            <header-vue @toggle-cart="toggleCartStatus"  @filter-goods="filterGoods"></header-vue>
+            <cart-vue  @cartGoods="cartGoods" :is-visible-cart="isVisibleCart"></cart-vue>
 
             
 
@@ -21,7 +21,7 @@
                 <div v-for="item in filteredGoods" :key="item.id"  :goods="filteredGoods" class="goods-item">
                     <h3>{{item.product_name}}</h3>
                     <p>{{item.price}}</p>
-                    <button @Click="addToCart" class="good-button">Добавить</button>
+                    <button @Click="addToCart(item)" class="good-button">Добавить</button>
                 </div>
                 </div>
             </main>
