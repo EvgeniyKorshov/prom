@@ -1,4 +1,4 @@
-
+const API_URL = 'http://localhost:3000';
 
 Vue.component('header-vue', {
   data:()=>( {
@@ -22,7 +22,7 @@ Vue.component('header-vue', {
   <header>
   <div class="nav">
       <input type="text" class="goods-search" v-model="searchValue"/>
-      <button class="cart-button" type="button" @Click="onClick">Искать</button>
+      <button class="cart-button" type="button" @click="onClick">Искать</button>
       <button class="cart-button" type="button" @click="$emit('toggle-cart')"  >Корзина</button>
   </div>
 </header>  
@@ -30,23 +30,52 @@ Vue.component('header-vue', {
 })
 
 Vue.component('cart-vue', {
- props:{
+ 
+  props:{
+  
   isVisibleCart:{
       type: Boolean,
       default:false,
-    }
- },
+    },
+  cartGoods:{
+    
+    type:Array,
+    default:()=>([jvjv]),
+  },
+  makePOSTRequest:{
+    type:Function,
+    default:()=>null
+  },
+  getCart:{
+    type:Function,
+    default:()=>null,
+  },
+  },
+  methods:{
+    onClick(item){
+      this.makePOSTRequest(`${API_URL}/deleteFromCart`,item)
+      .then(()=>this.getCart())
+    },
+  },
+  
  
   template: `
   <div v-show="isVisibleCart" class="cart">
   <h3>Корзина:</h3>
-  <div   class="cart-list"></div>
+  <div class="cart-list">
+  <div v-for="item in cartGoods" :key="item.id_product" class="cart-item">
+  <h3>{{item.product_name}}</h3>
+  <p>{{item.price}}</p>
+  <button @click="onCLick(item)">Удалить</button>
+                
+  </div>
+  </div>
 </div>    
   `
 })   
 
 
-const API_URL = 'http://localhost:3000';
+
 const app = new Vue({
 
    el: '#app',

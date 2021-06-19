@@ -11,7 +11,7 @@
     
    <div id="app">
             <header-vue @toggle-cart="toggleCartStatus"  @filter-goods="filterGoods"></header-vue>
-            <cart-vue  @cartGoods="cartGoods" :is-visible-cart="isVisibleCart"></cart-vue>
+            <cart-vue @makePOSTRequest="makePOSTRequest" :get-cart="getCart" @cartGoods="cartGoods" :is-visible-cart="isVisibleCart"></cart-vue>
 
             
 
