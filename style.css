@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contacts-item2 {
+    padding-bottom: 10px;
+}
+
+.contacts-item1 {
+    background: url(img/Rectangle2.png) 100% 100% no-repeat;
+    background-size: cover;
+}
+
+.main {
+    background: url(img/Rectangle.png) 100% 100% no-repeat;
+    background-size: cover;
+}
+
+.contacts {
+    background: url(img/Rectangle1.png) 100% 100% no-repeat;
+    background-size: cover;
+}
+
+.footer {
+    height: 100%;
+    background-color: #316099;
+
+}
+
+.nav {
+
+    margin: 20px;
+}
+
+.contacts-item8 {
+
+    padding-bottom: 10px;
+}
+
+.contacts-footer-text {
+    padding-bottom: 10px;
+}
+
+.footer-text {
+    color: #FFFFFF;
+}
+
+
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+ul li {
+    display: inline;
+    margin-right: 5px;
+    padding: 3px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.contacts-item {
+    min-width: 259px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 10px;
+}
+
+.item {
+    min-width: 259px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 10px;
+}
+
+body {
+    font-family: sans-serif;
+
+}
+
+input {
+    width: 100%;
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #1F3F68;
+    text-align: center;
+}
+
+.contacts-li {
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
+.heading {
+    width: 510px;
+}
+
+.footer-content {
+    width: 495px;
+}
+
+h1 {
+    font-size: 64px;
+    color: #1F3F68;
+    text-align: center;
+    width: 425px;
+}
+
+h2 {
+    color: #1F3F68;
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+h3 {
+    color: #1F3F68;
+    font-size: 36px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+    text-align: center;
+}
+
+
+
+.send {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+a {
+    font-size: 14px;
+    color: #1F3F68;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.font {
+    font-family: Arial;
+    color: black;
+    font-size: 25px;
+}
+
+form {
+    width: 70%;
+}
