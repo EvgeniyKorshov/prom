@@ -1,0 +1,357 @@
+body 
+{
+   margin: 0 ;
+   width: 100%;
+   min-height: 100vh;
+}
+a {
+    font-family: Arimo;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(0, 168, 118, 1);
+
+
+    color: #00A876;
+    text-decoration: none;
+}
+a:hover {
+    color:  #14523F;
+}
+
+a:active {
+    color:  #006D4C;
+}
+.footer-text
+{
+    font-family: Arimo;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+.logo-kang
+{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 168, 118, 1);
+
+}
+.logo-kang-1
+{
+    font-family: Inter;
+font-size: 8px;
+font-weight: 400;
+line-height: 10px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(0, 168, 118, 1);
+}
+.nav-bar
+{
+    display: grid;  
+    /* justify-content: center; */
+    align-items:center;
+    /* justify-content:space-around; */
+    gap:200px;
+    grid-template-columns: 1fr 1fr;
+    width: 640px;
+}
+.login
+{
+    
+    width: 70px;
+    height: 23px;
+}
+.logo
+{
+    height: 80px;
+    width: 200px;
+    background: url(img/kangaroo-glass.svg) no-repeat;
+}
+.input-text
+{
+    font-family: Arimo;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(32, 126, 98, 1);
+
+
+}
+.reg-text
+{
+    
+    margin-top: 10px;
+    font-family: Arimo;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(0, 168, 118, 1);
+
+
+}
+.reg-black
+{
+    font-family: Arimo;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+/* .reg-green
+{
+    font-family: Arimo;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:rgba(0, 168, 118, 1);
+
+} */
+
+
+.wrap
+{
+    
+    height: 100vh;
+    margin: 0 auto;
+    width: 768px;
+
+    
+        display: grid;  
+        grid-template-rows:  100px 1fr 93px; 
+        grid-template-columns: 100%;
+      
+}
+ul li
+{
+   margin: 10px;
+    display: grid;  
+    justify-content: center;
+    align-items:center;
+    list-style-type: none;
+}
+.btn-center
+{
+    display: grid;  
+    justify-content: center;
+    align-items:center;
+}
+.form
+{
+    display: grid;  
+    justify-content: center;
+    align-items:center;
+}
+.content
+{
+    display: grid;  
+    justify-content: center;
+    align-items:center;
+}
+.footer
+{
+    display: grid;  
+    justify-content: center;
+    align-items:center;
+    height: 93px;
+    width: 768px;
+    -webkit-box-shadow: 0px -15px 8px -10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px -15px 8px -10px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px -15px 8px -10px rgba(34, 60, 80, 0.2);
+}
+.header
+{
+   
+    display: grid;  
+    justify-content: center;
+    
+    /* height: 100px; */
+    width: 768px;
+    -webkit-box-shadow: 0px 15px 8px -10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 15px 8px -10px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 15px 8px -10px rgba(34, 60, 80, 0.2);
+}
+input{
+    height: 32px;
+    width: 300px;
+    border: 0px;
+    border-bottom: 2px solid #207E62;
+
+
+    font-family: Arimo;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.btn 
+{
+  
+    height: 50px;
+    width: 225px;
+    border-radius: 8px;
+
+    background:linear-gradient(0deg, #00A876, #00A876);
+
+    font-family: Arimo;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.btn:hover {
+    background: linear-gradient(0deg, #14523F, #14523F);
+}
+
+.btn:active {
+    background: linear-gradient(0deg, #006D4C, #006D4C),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+.window{
+    display: grid;  
+    justify-content: center;
+    align-items:center;
+    height: 525px;
+    width: 600px;
+    -webkit-box-shadow: 0px 0px 18px 11px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 18px 11px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 18px 11px rgba(34, 60, 80, 0.2);
+    }
+/* body {
+    background-color: rgb(255, 255, 255);
+   margin: 0 ;
+   height: 1200px;
+}
+input{
+    border: 0px;
+    height: 62px;
+width: 600px;
+border-bottom: 2px solid #207E62;
+
+font-family: Arimo;
+font-size: 32px;
+font-weight: 400;
+line-height: 37px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+
+.asd {
+    height: 1200px;
+    width: 1440px;
+    left: 3509px;
+    top: -818px;
+    border-radius: 0px;
+    display: grid;  
+    grid-template-columns: 1fr 1fr ;
+   
+    margin:0 auto;
+}
+
+.left{
+height: 1200px;
+width: 600px;
+
+background: url('img/1.svg');
+}
+.right{
+height: 1200px;
+width: 840px;
+}
+.text{
+    
+width: 600px;
+    margin:250px auto ;
+}
+.reg{
+ margin:300px auto ;
+    width: 369px;
+    height: 55px;
+    left: 115px;
+    top: 372px;
+    
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 55px;
+    text-align: center;
+    
+    color: #ffffff;
+
+}
+
+.top{
+ 
+width: 51px;
+height: 25px;
+left: 10px;
+top: 14px;
+
+font-family: 'Arimo';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 25px;
+display: flex;
+align-items: center;
+
+color: #207E62;
+}
+.wrap_btn{
+   
+
+}
+.btn {
+    margin-top: 20%;
+    margin-left: 25%;
+height: 50px;
+width: 300px;
+left: 870px;
+top: 976px;
+border-radius: 8px;
+padding: 10px 20px 10px 20px;
+background:linear-gradient(0deg, #00A876, #00A876);
+
+
+font-family: Arimo;
+font-size: 20px;
+font-weight: 700;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: center;
+color: #ffffff;
+}
+
+.btn:hover {
+    background: linear-gradient(0deg, #14523F, #14523F);
+}
+
+.btn:active {
+    background: linear-gradient(0deg, #006D4C, #006D4C),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+} */

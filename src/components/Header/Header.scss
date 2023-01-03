@@ -1,0 +1,84 @@
+$green: #00A876;
+$shadow: rgba(0, 168, 118, 0.2);
+
+.container {
+    max-width: 1200px;
+ 
+    font-family: 'Arimo';
+
+}
+
+.App-header {
+   
+    width: 100%;
+    min-height: 100px;
+    background: #FFFFFF;
+   
+    position: relative;
+    z-index: 1;
+    -webkit-box-shadow: 0px 0px 18px 11px $shadow;
+    -moz-box-shadow: 0px 0px 18px 11px $shadow;
+    box-shadow: 0px 0px 18px 11px $shadow;
+}
+
+.nav {
+    height: 100%;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo {
+    display: flex;
+    color: black;
+    user-select: none;
+}
+.logo_img {
+    // width: 57px;
+    // height: 80px;
+    // padding-right: 15px;
+    padding: 10px;
+    box-sizing: unset;
+    & img {
+        height: 80px;
+    }
+}
+.logo_name {
+    color: $green;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (max-width: 375px) {
+            display:none;
+      }
+}
+
+.logo_title {
+    color: $green;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.nav_links {
+    display: flex;
+    user-select: none;
+    line-height: 60px;
+    margin-right: 20px;
+    &_title {
+        font-weight: 400;
+        font-size: 20px;
+        color: $green;
+        
+        cursor: pointer;
+        &:hover {
+            color: $green;
+        }
+    }
+
+}
+
+.nav_link_route {
+    color: #00A876 !important;
+}
